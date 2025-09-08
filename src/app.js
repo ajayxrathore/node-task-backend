@@ -6,9 +6,9 @@ app.use(cors(
 { origin: "https://node-task.pages.dev" }
 ));
 app.use(express.json());
-// app.get("/", (req, res) => {
-//   console.log("get route");
-// });
+app.get("/", (req, res) => {
+  console.log("You are on Ajay's server");
+});
 app.post("/", async (req, res) => {
   const data = req.body;
   try {
