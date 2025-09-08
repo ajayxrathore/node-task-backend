@@ -7,7 +7,7 @@ app.use(cors(
 ));
 app.use(express.json());
 app.get("/", (req, res) => {
-  console.log("You are on Ajay's server");
+  res.send("<h1>You are on Ajay's server</h1>");
 });
 app.post("/", async (req, res) => {
   const data = req.body;
