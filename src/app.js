@@ -3,7 +3,7 @@ import { createUser, getUsers } from "./controllers/user.controller.js";
 import cors from "cors";
 const app = express();
 app.use(cors(
-{ origin: "http://localhost:3000" }
+{ origin: "https://node-task.pages.dev/" }
 ));
 app.use(express.json());
 // app.get("/", (req, res) => {
